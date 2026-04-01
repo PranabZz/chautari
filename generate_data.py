@@ -1,6 +1,7 @@
 import pandas as pd
 import random
 import os
+from datetime import datetime, timedelta
 
 # Configuration
 NUM_USERS = 150
@@ -18,22 +19,30 @@ def generate_data():
     # 1. Users
     users = []
     for i in range(1, NUM_USERS + 1):
-        prefs = random.sample(CATEGORIES, k=random.randint(1, 3))
+        # Last 5 users are "New Users" (Cold Start)
+        if i > (NUM_USERS - 5):
+            prefs = "" 
+            username = f"new_user_{i}"
+        else:
+            prefs = ",".join(random.sample(CATEGORIES, k=random.randint(1, 3)))
+            username = f"user_{i}"
+            
         users.append({
             "user_id": i,
-            "username": f"user_{i}",
+            "username": username,
             "age": random.randint(18, 60),
             "location": random.choice(LOCATIONS),
-            "preferences": ",".join(prefs)
+            "preferences": prefs
         })
     pd.DataFrame(users).to_csv('data/users.csv', index=False)
-    print(f"Generated {NUM_USERS} users.")
+    print(f"Generated {NUM_USERS} users (Last 5 are Cold-Start).")
 
     # 2. Friendships
     friendships = set()
+    # Only create friendships for the first 145 users
     while len(friendships) < NUM_FRIENDSHIPS:
-        u1 = random.randint(1, NUM_USERS)
-        u2 = random.randint(1, NUM_USERS)
+        u1 = random.randint(1, NUM_USERS - 5)
+        u2 = random.randint(1, NUM_USERS - 5)
         if u1 != u2:
             pair = tuple(sorted((u1, u2)))
             friendships.add(pair)
@@ -44,14 +53,17 @@ def generate_data():
 
     # 3. Posts
     posts = []
+    now = datetime.now()
     for i in range(1, NUM_POSTS + 1):
         c_type = random.choice(CONTENT_TYPES)
+        created_at = now - timedelta(days=random.randint(0, 13), hours=random.randint(0, 23), minutes=random.randint(0, 59))
         posts.append({
             "post_id": 1000 + i,
-            "user_id": random.randint(1, NUM_USERS),
+            "user_id": random.randint(1, NUM_USERS - 5), # New users haven't posted yet
             "content_type": c_type,
             "category": random.choice(CATEGORIES),
-            "duration_sec": random.randint(15, 600) if c_type == "video" else 0
+            "duration_sec": random.randint(15, 600) if c_type == "video" else 0,
+            "created_at": created_at.strftime('%Y-%m-%d %H:%M:%S')
         })
     pd.DataFrame(posts).to_csv('data/posts.csv', index=False)
     print(f"Generated {NUM_POSTS} posts.")
@@ -60,7 +72,7 @@ def generate_data():
     engagements = []
     seen_pairs = set()
     while len(engagements) < NUM_ENGAGEMENTS:
-        uid = random.randint(1, NUM_USERS)
+        uid = random.randint(1, NUM_USERS - 5) # New users have no history
         pid = 1000 + random.randint(1, NUM_POSTS)
         if (uid, pid) not in seen_pairs:
             post = posts[pid - 1001]
