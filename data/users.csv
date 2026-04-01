@@ -1,0 +1,151 @@
+user_id,username,age,location,preferences
+1,user_1,53,New York,"gaming,tech"
+2,user_2,52,Manchester,"music,art"
+3,user_3,39,New York,science
+4,user_4,32,Chicago,"science,travel"
+5,user_5,49,Manchester,"science,sports"
+6,user_6,48,Los Angeles,science
+7,user_7,40,London,"travel,fashion,music"
+8,user_8,29,Nashville,"tech,music,fashion"
+9,user_9,23,Tokyo,"science,music"
+10,user_10,32,Los Angeles,"sports,news"
+11,user_11,36,Berlin,fashion
+12,user_12,33,Los Angeles,"fashion,tech"
+13,user_13,32,Nashville,"sports,gaming,cooking"
+14,user_14,44,Chicago,"news,gaming,fashion"
+15,user_15,28,New York,"cooking,fashion,sports"
+16,user_16,43,Sydney,"travel,news"
+17,user_17,43,Chicago,tech
+18,user_18,50,San Francisco,science
+19,user_19,26,New York,"cooking,music,gaming"
+20,user_20,45,Boston,travel
+21,user_21,44,Manchester,news
+22,user_22,30,Sydney,"tech,fashion"
+23,user_23,57,Manchester,"sports,art,tech"
+24,user_24,21,London,"news,travel"
+25,user_25,41,London,fashion
+26,user_26,47,Manchester,sports
+27,user_27,43,Manchester,"music,gaming"
+28,user_28,35,Paris,"gaming,fashion"
+29,user_29,49,Chicago,"sports,music,tech"
+30,user_30,40,Berlin,"fashion,tech"
+31,user_31,27,Sydney,"music,art"
+32,user_32,47,Berlin,art
+33,user_33,52,Boston,"news,science"
+34,user_34,51,Los Angeles,"gaming,fashion"
+35,user_35,36,Boston,tech
+36,user_36,47,Nashville,"cooking,sports"
+37,user_37,41,San Francisco,sports
+38,user_38,49,Boston,"tech,cooking,sports"
+39,user_39,36,London,tech
+40,user_40,39,Paris,"sports,tech,music"
+41,user_41,29,Sydney,"travel,news,sports"
+42,user_42,55,London,"fashion,gaming"
+43,user_43,58,Tokyo,news
+44,user_44,36,Boston,"art,fashion"
+45,user_45,40,Paris,"science,gaming"
+46,user_46,50,Nashville,gaming
+47,user_47,42,Los Angeles,"tech,science,gaming"
+48,user_48,24,Paris,"art,music,sports"
+49,user_49,47,Paris,"music,news,tech"
+50,user_50,30,Paris,"cooking,gaming"
+51,user_51,44,Tokyo,"news,music"
+52,user_52,51,Berlin,news
+53,user_53,24,Chicago,"tech,art"
+54,user_54,38,Nashville,"science,news"
+55,user_55,58,Nashville,art
+56,user_56,52,Tokyo,cooking
+57,user_57,39,New York,"fashion,gaming,sports"
+58,user_58,44,Berlin,"fashion,art,news"
+59,user_59,51,Manchester,"fashion,news"
+60,user_60,45,New York,"news,tech"
+61,user_61,34,London,"sports,art"
+62,user_62,29,Chicago,"music,science,travel"
+63,user_63,26,Sydney,"news,music,sports"
+64,user_64,20,London,"gaming,music,sports"
+65,user_65,48,Sydney,music
+66,user_66,57,Chicago,"tech,news"
+67,user_67,40,Boston,"tech,gaming,science"
+68,user_68,39,Nashville,cooking
+69,user_69,19,Los Angeles,"sports,tech,fashion"
+70,user_70,60,Sydney,"music,travel"
+71,user_71,58,Tokyo,"gaming,music"
+72,user_72,59,San Francisco,art
+73,user_73,57,New York,news
+74,user_74,49,Tokyo,music
+75,user_75,53,Nashville,"cooking,gaming,news"
+76,user_76,54,Sydney,"science,fashion,tech"
+77,user_77,34,Berlin,"science,cooking"
+78,user_78,47,Los Angeles,"news,science"
+79,user_79,40,Paris,travel
+80,user_80,54,Boston,"gaming,tech,art"
+81,user_81,59,Boston,"science,tech"
+82,user_82,18,Chicago,"science,travel"
+83,user_83,59,San Francisco,fashion
+84,user_84,42,Los Angeles,"fashion,travel"
+85,user_85,34,Los Angeles,"travel,art,sports"
+86,user_86,41,Manchester,"science,travel,news"
+87,user_87,54,Los Angeles,"cooking,music"
+88,user_88,18,Berlin,"gaming,news,science"
+89,user_89,33,Chicago,"sports,fashion"
+90,user_90,31,Berlin,"science,travel,news"
+91,user_91,30,Chicago,"gaming,music"
+92,user_92,56,Chicago,sports
+93,user_93,49,Chicago,"gaming,music"
+94,user_94,42,Sydney,gaming
+95,user_95,27,Boston,news
+96,user_96,23,Berlin,tech
+97,user_97,48,Paris,gaming
+98,user_98,46,Los Angeles,"gaming,science,art"
+99,user_99,51,Boston,"art,news,cooking"
+100,user_100,53,Tokyo,"art,cooking"
+101,user_101,58,Tokyo,"music,gaming"
+102,user_102,45,Los Angeles,"cooking,news"
+103,user_103,23,Chicago,"gaming,sports"
+104,user_104,52,Nashville,"art,travel,gaming"
+105,user_105,60,Manchester,"cooking,sports"
+106,user_106,23,Boston,"science,sports"
+107,user_107,19,Boston,cooking
+108,user_108,37,Paris,fashion
+109,user_109,58,New York,"gaming,art"
+110,user_110,26,San Francisco,"tech,sports"
+111,user_111,60,New York,"cooking,news"
+112,user_112,30,Boston,sports
+113,user_113,35,Berlin,science
+114,user_114,31,London,"cooking,gaming"
+115,user_115,18,London,"music,science,news"
+116,user_116,50,Berlin,"science,art"
+117,user_117,46,Sydney,science
+118,user_118,22,Berlin,"science,travel,cooking"
+119,user_119,26,Paris,"fashion,art"
+120,user_120,21,Tokyo,"news,tech,sports"
+121,user_121,37,London,"art,sports,science"
+122,user_122,55,Boston,news
+123,user_123,60,Boston,"music,gaming,science"
+124,user_124,32,Chicago,"music,fashion,sports"
+125,user_125,29,Sydney,"science,news,cooking"
+126,user_126,46,Boston,"art,fashion"
+127,user_127,39,Paris,"news,cooking,science"
+128,user_128,30,London,"tech,cooking,travel"
+129,user_129,40,Tokyo,fashion
+130,user_130,37,Manchester,news
+131,user_131,35,Boston,"science,travel,cooking"
+132,user_132,54,San Francisco,"gaming,music"
+133,user_133,50,London,"science,music,gaming"
+134,user_134,60,San Francisco,"art,travel,music"
+135,user_135,33,Los Angeles,"cooking,music,science"
+136,user_136,56,Nashville,"art,gaming"
+137,user_137,42,Los Angeles,"science,travel"
+138,user_138,57,San Francisco,"travel,cooking"
+139,user_139,52,London,"fashion,science,art"
+140,user_140,48,Chicago,"travel,fashion"
+141,user_141,20,Manchester,"travel,tech,science"
+142,user_142,21,Los Angeles,"fashion,art"
+143,user_143,60,London,"gaming,sports"
+144,user_144,48,Manchester,"sports,travel"
+145,user_145,43,Chicago,science
+146,user_146,42,Manchester,"art,gaming,science"
+147,user_147,46,Boston,"sports,news,cooking"
+148,user_148,49,Boston,"sports,tech,music"
+149,user_149,28,London,"music,art,fashion"
+150,user_150,46,San Francisco,"art,science"
